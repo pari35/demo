@@ -1,0 +1,52 @@
+
+ {% include 'styling.html' %} 
+
+
+{% block styling %}
+
+<style>
+    .container {
+      height: 200px;
+      position: relative;
+      
+    }
+    
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 10%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    </style>
+    
+<div class="container">
+  <div class="vertical-center">
+      <button type="button" align="center" class="btn btn-outline-dark" ><a href="{% url 'addtech' %}"> Add Technology </a> </button>
+    </div>
+</div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Technology</th>
+        <th scope="col">Actions</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Java</th>
+        <td>Mark</td>
+        
+      </tr>
+      <tr>
+        <th scope="row">Python</th>
+        <td>Jacob</td>
+        
+      </tr>
+      
+    </tbody>
+  </table>
+
+
+  {% endblock styling %}
